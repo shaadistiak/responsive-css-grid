@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column-grid</title>
+    <style>
+
+.box{
+
+display: flex;
+background-color: gray;
+padding: 10px;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+
+.container {
+    height: 500px;
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+}
+
+.lambi{
+
+grid-column: span 1;
+grid-row: span 5;
+
+}
+
+.diff{
+
+grid-column: span 3;
+grid-row: span 1;
+
+}
+
+.colo{
+
+background-color:salmon;
+
+}
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="box lambi">1</div>
+
+<div class="box">2</div>
+
+<div class="box">3</div>
+
+<div class="box">4</div>
+
+<div class="box">5</div>
+
+<div class="box colo">6</div>
+
+<div class="box colo">7</div>
+
+<div class="box">8</div>
+
+<div class="box colo">9</div>
+
+<div class="box colo">10</div>
+
+<div class="box diff">11</div>
+
+<div class="box diff">12</div>
+
+
+</div>
+
+
+    
+</body>
+</html>
